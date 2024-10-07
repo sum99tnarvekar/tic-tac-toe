@@ -1,38 +1,103 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@300..700&display=swap');
+
+body{
+  background-color: #80e5ff;
+    background-image: url("./assets/bg-gamepad.svg");
+    background-repeat: no-repeat;
+    background-size: 500px 500px;
+    background-position: -52px 278px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container{
+    width: 80%;
+    margin: auto;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.teko-text {
+         font-family: "Teko", sans-serif;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.text-shadow {
+    text-shadow: 0 4px 6px rgba(0, 0, 0, 0.6); /* You can adjust the values as needed */
 }
 
-.App-link {
-  color: #61dafb;
+.backdrop{
+    background: linear-gradient(117.76deg, rgba(255, 255, 255, 0.5) -7.21%, rgba(255, 255, 255, 0.01) 118.08%);
+    color: white;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    border: 1px solid white;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/*smooth scroll bar*/
+.intro-container {
+    -ms-overflow-style: none; /* Internet Explorer 10+ */
+    scrollbar-width: none; /* Firefox */
+}
+
+.intro-container::-webkit-scrollbar {
+    display: none; /* Safari and Chrome */
+}
+
+/*smooth scroll bar*/
+
+.toe-boxes{
+    height: 100px;
+    width: 100px;
+    background-color: white;
+    margin: 10px;
+}
+.toe-boxes-innerbody{
+    height: 100px;
+    width: 100px;
+    background-color: white;
+}
+
+@media (min-width: 390px) and (max-width: 640px) {
+    .toe-boxes {
+        height: 60px;
+        width: 60px;
+        background-color: whiteSmoke;
+    }
+    .toe-boxes-innerbody {
+        height: 60px;
+        width: 60px;
+        background-color: whiteSmoke;
+    }
+}
+
+@media (min-width: 768px) {
+    .toe-boxes {
+        height: 70px;
+        width: 70px;
+    }
+
+    .toe-boxes-innerbody {
+        height: 70px;
+        width: 70px;
+    }
+}
+
+@media (min-width: 820px) {
+    .toe-boxes {
+        height: 90px;
+        width: 90px;
+    }
+
+    .toe-boxes-innerbody {
+        height: 90px;
+        width: 90px;
+    }
+}
+
+@media (min-width: 1024px) and (max-width: 1536px) {
+    .toe-boxes {
+        height: 100px;
+        width: 100px;
+    }
+
+    .toe-boxes-innerbody {
+        height: 100px;
+        width: 100px;
+    }
 }
